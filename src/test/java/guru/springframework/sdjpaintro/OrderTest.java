@@ -30,7 +30,7 @@ class OrderTest {
         long countBefore = bookRepository.count();
         assertThat(countBefore).isEqualTo(2);
 
-        bookRepository.save(new Book("My Book", "1234567890", "My Publisher"));
+        bookRepository.save(new Book("My Book", "1234567890", "My Publisher", null));
 
         long countAfter = bookRepository.count();
 

@@ -19,9 +19,9 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) {
         bookRepository.deleteAll();
-        Book szindbadHazamegy = new Book("Szindbád hazamegy", "123", "Helikon");
+        Book szindbadHazamegy = new Book("Szindbád hazamegy", "123", "Helikon", null);
         bookRepository.save(szindbadHazamegy);
-        Book vegtelenTrefa = new Book("Végtelen tréfa", "654", "Jelenkor");
+        Book vegtelenTrefa = new Book("Végtelen tréfa", "654", "Jelenkor", null);
         bookRepository.save(vegtelenTrefa);
     }
 
